@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Background with Text</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    position: relative; /* Ensure positioning context for absolutely positioned elements */
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh83blDMAOUYLOprZbaeKFbYtK0GtWmaXDmg&usqp=CAU) no-repeat center center fixed; /* Set image as background */
+    background-size: cover; /* Cover the entire screen with the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image stays behind other content */
+  }
+
+  .text {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the text stays on top of the background image */
+  }
+</style>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="text">PIERCED</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Background with Text</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    position: relative; /* Ensure positioning context for absolutely positioned elements */
+    overflow: hidden; /* Hide overflow to prevent scrollbar */
+  }
+
+  .background-image {
+    width: 100%;
+    height: 100%;
+    background: url(	https://i.imgur.com/UxnNmnS.gif
+) no-repeat center center fixed; /* Set image as background */
+    background-size: cover; /* Cover the entire screen with the background image */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure the image stays behind other content */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
+    opacity: 1; /* Initial opacity */
+  }
+
+  .text {
+    color: black;
+    font-size: 3em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure the text stays on top of the background image */
+    transition: color 0.5s ease; /* Smooth transition for color */
+  }
+
+  /* Lines for hover effect */
+  .background-image::before,
+  .background-image::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff; /* Line color */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: transform 0.5s ease; /* Smooth transition for line movement */
+    z-index: 1; /* Ensure the lines stay on top */
+  }
+
+  .background-image::after {
+    background-color: #000; /* Alternate line color */
+  }
+
+  /* Hover effect */
+  .background-image:hover::before {
+    transform: translateY(-50%) translateX(-100%);
+  }
+
+  .background-image:hover::after {
+    transform: translateY(-50%) translateX(100%);
+  }
+
+  .background-image:hover {
+    opacity: 0.7; /* Reduce opacity on hover */
+  }
+
+  .text:hover {
+    color: white; /* Change text color on hover */
+  }
+</style>
+</head>
+<body>
+  <div class="background-image"></div>
+  <div class="text">PIERCED</div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glowing Buttons as Images</title>
+<link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+  <div class="button-container">
+    <a href="#" class="glow-button">
+      <img src="button1.png" alt="Button 1">
+    </a>
+    <a href="#" class="glow-button">
+      <img src="button2.png" alt="Button 2">
+    </a>
+    <a href="#" class="glow-button">
+      <img src="button3.png" alt="Button 3">
+    </a>
+    <a href="#" class="glow-button">
+      <img src="button4.png" alt="Button 4">
+    </a>
+    <a href="#" class="glow-button">
+      <img src="button5.png" alt="Button 5">
+    </a>
+  </div>
+</body>
+</html>
+
+
