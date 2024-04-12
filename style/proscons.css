@@ -1,0 +1,124 @@
+
+      body {
+        background: url(../images/belly.gif) #000;
+        background-size: cover; 
+        background-repeat: no-repeat;
+      }
+
+  
+      
+
+      /* CSS for Product Aftercare ------------*/
+
+.boxes{
+  width:35% !important;
+  height: auto;
+  display:grid;
+  color: #fff;
+  margin-left: 4em;
+  margin-top: 10%;
+
+}
+
+.boxes h5, p{
+  font-family: "Varela Round", sans-serif;
+}
+
+.b1,.b2{
+  width: 100%;
+}
+
+
+h5{
+  font-size:18px;
+  text-transform:uppercase;
+}
+
+p{
+  font-size:12px;
+  margin-top:1em;
+}
+
+.box_container{
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  /*grid-template-rows: 80px 80px 80px;*/
+  padding: 1em;
+  background: #151515;
+  margin-bottom: 1em;
+  border: 1px solid #fff;
+
+
+}
+
+.img_container{padding-right:1em;}
+
+.b1{
+  display: block;
+}
+
+.img_container img{
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding-top:5em;
+}
+
+
+
+.h20{
+  height:auto !important;
+  width: auto !important;
+}
+h5{
+  font-size:18px;
+  text-transform:uppercase;
+  font-family: "M PLUS 1 Code", monospace;
+}
+
+p{
+  font-size: 12px;
+  margin-top:1em;
+  font-family: "M PLUS 1 Code", monospace;
+}
+
+.home-button{
+  text-decoration: none;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  background: red;
+  color:#fff;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top:0px;
+  left:0;
+  font-family: "M PLUS 1 Code", monospace !important;
+  letter-spacing: 2px;
+}
+
+.home-button:hover{
+  color:#eee;
+  background:  rgb(137, 0, 171);
+
+  
+}
+.a2{
+  text-decoration: none;
+  padding: 0.5em 2em;
+  text-transform: uppercase;
+  background: red;
+  color:#fff;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top:0;
+  right:0;
+  letter-spacing: 2px;
+  font-family: "M PLUS 1 Code", monospace !important;
+
+}
+
+.a2:hover{
+  color:#eee;
+  background: rgb(137, 0, 171);
+}
